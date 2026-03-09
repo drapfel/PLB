@@ -6,10 +6,32 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            max-width: 700px;
-            margin: 40px auto;
+            max-width: 1200px; /* Zwiększyłem szerokość, by pomieścić dwie kolumny */
+            margin: 20px auto;
             line-height: 1.6;
+            padding: 0 20px;
         }
+
+        /* Kontener dla obu kolumn */
+        .main-container {
+            display: flex;
+            gap: 30px; /* Odstęp między kolumnami */
+            align-items: flex-start;
+        }
+
+        /* Lewa kolumna (przyciski i teksty) */
+        .left-column {
+            flex: 1; /* Zajmuje dostępną przestrzeń */
+            min-width: 400px;
+        }
+
+        /* Prawa kolumna (ICD-10) */
+        .right-column {
+            flex: 0 0 350px; /* Stała szerokość kolumny z kodami */
+            position: sticky;
+            top: 20px; /* Kolumna będzie "jechać" za Tobą przy przewijaniu */
+        }
+
         .btn {
             display: block;
             width: 100%;
@@ -17,20 +39,41 @@
             padding: 12px;
             font-size: 16px;
             cursor: pointer;
+            background-color: #f8f8f8;
+            border: 1px solid #ccc;
+            border-radius: 4px;
         }
+        .btn:hover {
+            background-color: #e0e0e0;
+        }
+
         .info {
             background: #f0f0f0;
             padding: 15px;
             border-radius: 6px;
             margin-bottom: 25px;
+            font-size: 0.9em;
+        }
+
+        pre {
+            white-space: pre-wrap; /* Zawijanie tekstu wewnątrz pre */
+            word-wrap: break-word;
+        }
+
+        h3 {
+            margin-top: 20px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
         }
     </style>
 </head>
 <body>
 
-    <div class="info">
-   
-<pre>ICD-9:
+<div class="main-container">
+    
+    <div class="left-column">
+        <div class="info">
+            <pre>ICD-9:
 89.00 konsultacja lekarska
 100.42 Znieczulenie splotów lub nerwów > 2 H (blokady)
 04.80 Wstrzyknięcie do nerwu obwodowego - nie określone inaczej (TPI)
@@ -38,34 +81,25 @@
 99.2909 Wlew dożylny innej substancji leczniczej (każde podanie leku IV)
 99.89 Zabieg fizykoterapii przeciwbólowo
 93.3930 TENS</pre>
-</div>
+        </div>
 
+        <button class="btn" onclick="copyText('wywiad')">Wywiad</button>
+        <button class="btn" onclick="copyText('fizykalne')">Bad. fizykalne</button>
+        <button class="btn" onclick="copyText('zalfarma')">Zal. farmakologia</button>
+        <button class="btn" onclick="copyText('zalinne')">Zal. inne</button>
+        <br>
+        <button class="btn" onclick="copyText('zabieg')">Zabieg</button>
 
-<button class="btn" onclick="copyText('wywiad')">Wywiad</button>
-<button class="btn" onclick="copyText('fizykalne')">Bad. fizykalne</button>
-<button class="btn" onclick="copyText('zalfarma')">Zal. farmakologia</button>
-<button class="btn" onclick="copyText('zalinne')">Zal. inne</button>
-<button class="btn" onclick="copyText('zabieg')">Zabieg</button>
+        <br>
+        <a href="https://github.com/drapfel/PLB/blob/main/Zgoda.pdf" target="_blank">Zgoda na blokadę</a>
+        <br><br>
 
-<br>
-<a href="https://github.com/drapfel/PLB/blob/main/Zgoda.pdf">Zgoda na blokadę</a>
-<br><br>
-
-<pre id="wywiad" hidden="">Przyjęcie do Poradni Leczenia Bólu z powodu dolegliwości bólowych ...
-
+        <h3>Wywiad</h3>
+        <pre id="wywiad">Przyjęcie do Poradni Leczenia Bólu z powodu dolegliwości bólowych ...
 W dotychczasowej diagnostyce stwierdzono ...
-
-Ból - ocena: 
- - lokalizacja:
- - charakter: tępy / ostry / piekący / palący / jak rażenie prądem
- - stały / nawracający / napadowy
- - natężenie aktualne:  ... wg NRS   , średnie w ciągu ostatniego tygodnia: ... wg NRS
-Aktywność: bez ograniczeń.
-Nastrój: dobry.
-Sen: bez zaburzeń.
-
+Ból - ocena: lokalizacja/charakter/występowanie/czynniki/NRS
+Aktywność: bez ograniczeń. Nastrój: dobry. Sen: bez zaburzeń.
 Innych dolegliwości nie zgłasza.
-
 W wywiadzie:
 - padaczka?
 - kardiostymulator/ICD?
@@ -74,67 +108,56 @@ W wywiadzie:
 - uszkodzenie skóry?
 - leki przeciwzakrzepowe, ciężka skaza krwotoczna?
 - NT, DM, niewydolność serca?
-
+Obecnie stosowane leczenie:
 Alergie i nietolerancje lekowe: nieznane
+UWAGI: </pre>
 
-Dotychczas stosowane leczenie przeciwbólowe: 
+        <h3>Bad. fizykalne</h3>
+        <pre id="fizykalne">Stan ogólny dobry. Powłoki skórne w normie. Wydolność krążeniowo-oddechowa zachowana. Brzuch miękki, niebolesny.
+Chód samodzielny. Siła mięśniowa symetryczna. Czucie zachowane. Objawy korzeniowe ujemne.
+Ruchomość kręgosłupa szyjnego, lędźwiowego prawidłowa. Obrysy stawów prawidłowe. Zakres ruchu pełny.
+Napięcie mięśni kręgosłupa w normie. Tkliwe punkty okolicy głowy, szyi, kręgosłupa nieobecne.</pre>
 
-Uwagi: 
-</pre>
-
-<pre id="fizykalne" hidden="">Stan ogólny dobry. Powłoki skórne w normie. Wydolność krążeniowo-oddechowa zachowana. Brzuch miękki, niebolesny.
-Chód samodzielny. 
-Siła mięśniowa symetryczna. Czucie zachowane. 
-Objawy korzeniowe ujemne.
-Ruchomość kręgosłupa szyjnego, lędźwiowego prawidłowa.
-Obrysy stawów prawidłowe. Zakres ruchu pełny.
-Napięcie mięśni kręgosłupa w normie. 
-Tkliwe punkty okolicy głowy, szyi, kręgosłupa nieobecne.
-</pre>
-
-<pre id="zalfarma" hidden="">Systematyczne przyjmowanie leków:
-
+        <h3>Zal. farmakologia</h3>
+        <pre id="zalfarma">Systematyczne przyjmowanie leków:
 …
-
 Pragiola 25 mg rano i 50 mg wieczorem
 Dulsevia 30 mg 1x1 kaps. rano
-Paracetamol 500 mg 1-2 tabl. w razie bólu do 3-4x dziennie
-Pyralgina 500 mg 1-2 tabl. w razie bólu do 3-4x dziennie
+Paracetamol 500 mg 1-2 tabl. w razie bólu do 3-4x dziennie (bez recepty)
+Pyralgina 500 mg 1-2 tabl. w razie bólu do 3-4x dziennie (bez recepty)
 
-Przeciwwskazane przewlekłe przyjmowanie leków z grupy NLPZ (niesterydowe-przeciwzapalne).
-
-#NLPZ
+#NLPZ (wszystkie OTC)
 Dexak 25 mg 3x1 tabl. przez ok. 7 dni i odstawić
 Itami 140 mg plastry: 1 plaster 2 razy na dobę (rano i wieczorem) przez 7 dni miejscowo na bolesne miejsce
 Elmetacin aerozol 3-5 razy na dobę 5 dawek miejscowo na bolesne miejsce (nie przekraczać 75 dawek w ciągu doby)
 Traumon żel 3-4 razy dziennie po 5-10 cm żelu na skórę w okolicy objętej bólem, rozsmarować do całkowitego wchłonięcia
 
-#Suplementacja
+#Suplementacja (Rp)
 Neurovit 1x1 tabl. rano przez miesiąc
 Structum 500 mg 2x1 kaps.
 
-#Napięcie mięśniowe
+#Napięcie mięśniowe (Rp)
 Methocarbamol 500 mg 3x2 tabl. przez 10 dni, następnie 3x1 tabl.
 Myditin 3 mg 3x1 tabl.
 
 #Opioidy
-Poltram Combo 37,5/325 mg 3x1 tabl. (tzn. 1 tabl. godz. 8:00, 1 tabl. godz. 14:00 i 1 tabl. godz. 20:00)
-Poltram Retard 100 mg 2x1 tabl. (tzn. 1 tabl. godz. 8:00 i 1 tabl. godz. 20:00)
-Melodyn 35 ug/h 1/2 (pół) plastra, zmiana co 72 h (uwaga w razie gorączki)
-Bunondol 0,2 mg 1/2 tabl. w razie nasilenia bólu (do 3x dziennie)
-Tadomon 50 mg 2x1 tabl.  (tzn. 1 tabl. godz. 8:00 i 1 tabl. godz. 20:00)
+Poltram Combo 37,5/325 mg 3x1 tabl. (tzn. 1 tabl. godz. 8:00, 1 tabl. godz. 14:00 i 1 tabl. godz. 20:00) [30% ból, B w nowotworach]
+Poltram Retard 100 mg 2x1 tabl. (tzn. 1 tabl. godz. 8:00 i 1 tabl. godz. 20:00) [30% ból, B w nowotworach]
+Transtec 35 ug/h 1/2 (pół) plastra, zmiana co 72 h (uwaga w razie gorączki) [R ból, B w nowotworach]
+Bunondol 0,2 mg 1/2 tabl. w razie nasilenia bólu (do 3x dziennie) [30% ból, B w nowotworach]
+Tadomon 50 mg 2x1 tabl.  (tzn. 1 tabl. godz. 8:00 i 1 tabl. godz. 20:00) [B silny ból]
 
 #Inne
-Forlax 10 g rozp. w wodzie 1x1 saszetka rano
-Czopek glicerynowy / Laxol 1x1 doodbytniczo co II dzień
+Forlax 10 g rozp. w wodzie 1x1 saszetka rano (bez recepty)
+Czopek glicerynowy / Laxol 1x1 doodbytniczo co II dzień (bez recepty)
 Trittico CR 75 mg 1x 2/3 tabl. wieczorem w razie bezsenności
 Versatis 5% plaster miejscowo na bolesną okolicę na 12 godzin i przerwa na kolejne 12 godzin, do 3 plastrów jednorazowo
-Olejek CBD 5% 1 kropla 2x dziennie, zwiększać o 1 kroplę rano i wieczorem co 3 dni do dawki 5 kropli 2x dziennie
-</pre>
+Olejek CBD 5% 1 kropla 2x dziennie, zwiększać o 1 kroplę rano i wieczorem co 3 dni do dawki 5 kropli 2x dziennie (bez recepty)</pre>
 
-<pre id="zalinne" hidden="">Przekazano w sposób zrozumiały następujące zalecenia lekarskie. Ponowny, pilny kontakt z lekarzem w przypadku pogorszenia lub wystąpienia innych, niepokojących dolegliwości, także w razie wystąpienia objawów ostrej choroby (gorączka, odwodnienie, osłabienie, wymioty, biegunka, trudności z przyjmowaniem płynów i pokarmów itp.). Poinformowano o możliwym wpływie leków na funkcje psychomotoryczne i ograniczenie możliwości kierowania pojazdami.
+        <h3>Zal. inne</h3>
+        <pre id="zalinne">Przekazano w sposób zrozumiały następujące zalecenia lekarskie. Ponowny, pilny kontakt z lekarzem w przypadku pogorszenia lub wystąpienia innych, niepokojących dolegliwości, także w razie wystąpienia objawów ostrej choroby (gorączka, odwodnienie, osłabienie, wymioty, biegunka, trudności z przyjmowaniem płynów i pokarmów itp.). 
+Poinformowano o możliwym wpływie leków na funkcje psychomotoryczne i ograniczenie możliwości kierowania pojazdami.
 Dalsze leczenie ambulatoryjne pod opieką Lekarza rodzinnego.
-
 Dalsza diagnostyka w ramach Poradni Neurologicznej / Ortopedycznej.
 Zgłoszenie na kontrolną wizytę ...
 
@@ -155,22 +178,18 @@ Terapia poznawczo-behawioralna:
 - Ćwicz techniki relaksacyjne (oddech, medytacja, joga).  
 - Stosuj strategie radzenia sobie z bólem (uważność, pozytywne myślenie).  
 - Szukaj wsparcia w rodzinie, znajomych lub grupach wsparcia.  
-- Dbaj o higienę snu – stałe godziny, spokojne otoczenie.  
+- Dbaj o higienę snu – stałe godziny, spokojne otoczenie.  </pre>
 
-Dbanie o prawidłową masę ciała i zdrową dietę (produkty zbożowe, warzywa, owoce).
-
-</pre>
-
-<pre id="zabieg" hidden="">Po wyjąśnieniu proponowanej procedury, wykluczeniu bezwzględnych przeciwwskazań i uzyskaniu świadomej zgody wykonano zabieg blokady ....
+        <h3>Zabieg</h3>
+        <pre id="zabieg">Po wyjaśnieniu proponowanej procedury, wykluczeniu bezwzględnych przeciwwskazań i uzyskaniu świadomej zgody wykonano zabieg ...
 Łącznie podano ... lignokainy.
 Uzyskano zmniejszenie napięcia mięśniowego.
-Zabieg bez powikłań. 
-Poinformowano o postępowaniu po zabiegu (objawach alarmowych) jak w formularzu zgody na zabieg.
-</pre>
+Zabieg bez powikłań. Poinformowano o postępowaniu po zabiegu (objawach alarmowych).</pre>
+    </div>
 
-
-<div class="info">
-<pre>ICD-10:
+    <div class="right-column">
+        <div class="info">
+            <pre style="font-size: 12px;">ICD-10:
 
 ## 📌 Bóle kręgosłupa i zespoły korzeniowe
 - M54.2 — Ból szyi  
@@ -235,18 +254,21 @@ Poinformowano o postępowaniu po zabiegu (objawach alarmowych) jak w formularzu 
 ## 🧪 Ból związany z chorobami współistniejącymi
 - E11.4 — Cukrzyca typu 2 z powikłaniami neurologicznymi  
 - I73.9 — Choroba naczyń obwodowych (ból niedokrwienny)  
-- M32–M35 — Choroby tkanki łącznej (np. toczeń, twardzina)  
-</pre>
+- M32–M35 — Choroby tkanki łącznej (np. toczeń, twardzina)   
+            </pre>
+        </div>
+    </div>
+
 </div>
 
-    <script>
-   
+<script>
     function copyText(id) {
-    var text = document.getElementById(id).innerHTML;
-    navigator.clipboard.writeText(text).then(() => {
+        var text = document.getElementById(id).innerText; // Zmieniłem na innerText, żeby nie kopiować tagów HTML
+        navigator.clipboard.writeText(text).then(() => {
+ 
         });
-        }
-    </script>
+    }
+</script>
 
 </body>
 </html>
