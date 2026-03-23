@@ -1,0 +1,160 @@
+ICD-10: R52.2
+89.00 konsultacja lekarska
+100.42 Znieczulenie splotów lub nerwów > 2 H (blokady)
+04.80 Wstrzyknięcie do nerwu obwodowego - nie określone inaczej (TPI)
+99.921 Akupunktura / Pyonex
+99.2909 Wlew dożylny innej substancji leczniczej (każde podanie leku IV)
+99.89 Zabieg fizykoterapii przeciwbólowo
+93.3930 TENS
+
+
+=======================================
+
+
+Przyjęcie do Poradni Leczenia Bólu z powodu 
+
+W dotychczasowej diagnostyce stwierdzono ...
+
+Ból - ocena: 
+ - lokalizacja:
+ - charakter: tępy / ostry / piekący / palący / jak rażenie prądem
+ - stały / nawracający / napadowy
+ - natężenie aktualne:  ... wg NRS   , średnie w ciągu ostatniego tygodnia: ... wg NRS
+Aktywność: bez ograniczeń.
+Nastrój: dobry.
+Sen: bez zaburzeń.
+
+Innych dolegliwości nie zgłasza.
+
+W wywiadzie:
+
+- padaczka?
+- kardiostymulator/ICD?
+- ciąża?
+- nowotwór?
+- uszkodzenie skóry?
+- leki przeciwzakrzepowe, ciężka skaza krwotoczna?
+- NT, DM, niewydolność serca?
+
+Alergie i nietolerancje lekowe: nieznane
+
+Dotychczasowo stosowane leczenie przeciwbólowe: 
+
+ - stosowane leki przeciwbólowe: skuteczne/nieskuteczne
+ - ulga po zastosowanym leczeniu: całkowita / umiarkowana / mała / brak ulgi
+ - czy ból kontrolowany między dawkami leku przeciwbólowego? tak / nie
+Nudności i wymioty: neguje.
+Zaparcia: neguje.
+
+Fizjoterapia/ćwiczenia: nie była stosowana.
+Zabiegi/fizykoterapia: nie były stosowane.
+Metody interwencyjne: nie były stosowane.
+Wlewy lidokainy: nie były stosowane.
+Wsparcie psychologiczne: nie korzystano.
+
+================================================
+
+Stan ogólny dobry. Chód samodzielny. Wydolność krążeniowo-oddechowa zachowana. Brzuch miękki, niebolesny.
+Powłoki skórne w normie. Węzły chłonne niepowiększone.
+Siła mięśniowa symetryczna. Czucie zachowane. Objawy korzeniowe ujemne.
+Ruchomość kręgosłupa szyjnego, lędźwiowego prawidłowa.
+Obrysy stawów prawidłowe. Zakres ruchu pełny.
+Napięcie mięśni kręgosłupa w normie. 
+Tkliwe punkty okolicy głowy, szyi, kręgosłupa nieobecne.
+
+================================================
+
+
+Systematyczne przyjmowanie leków:
+
+…
+
+Pragiola 25 mg rano i 50 mg wieczorem
+Dulsevia 30 mg 1x1 kaps. rano
+Paracetamol 500 mg 1-2 tabl. w razie bólu do 3-4x dziennie
+Pyralgina 500 mg 1-2 tabl. w razie bólu do 3-4x dziennie
+
+
+
+Przeciwwskazane przewlekłe przyjmowanie leków z grupy NLPZ (niesterydowe-przeciwzapalne).
+
+#NLPZ
+Dexak 25 mg 3x1 tabl. przez ok. 7 dni i odstawić
+Itami 140 mg plastry: 1 plaster 2 razy na dobę (rano i wieczorem) przez 7 dni miejscowo na bolesne miejsce
+Elmetacin aerozol 3-5 razy na dobę 5 dawek miejscowo na bolesne miejsce (nie przekraczać 75 dawek w ciągu doby)
+Traumon żel 3-4 razy dziennie po 5-10 cm żelu na skórę w okolicy objętej bólem, rozsmarować do całkowitego wchłonięcia
+
+#Suplementacja
+Neurovit 1x1 tabl. rano przez miesiąc
+Structum 500 mg 2x1 kaps.
+
+#Napięcie mięśniowe
+Methocarbamol 500 mg 3x2 tabl. przez 10 dni, następnie 3x1 tabl.
+Myditin 3 mg 3x1 tabl.
+
+#Opioidy
+Poltram Combo 37,5/325 mg 3x1 tabl. (tzn. 1 tabl. godz. 8:00, 1 tabl. godz. 14:00 i 1 tabl. godz. 20:00)
+Poltram Retard 100 mg 2x1 tabl. (tzn. 1 tabl. godz. 8:00 i 1 tabl. godz. 20:00)
+Melodyn 35 ug/h 1/2 (pół) plastra, zmiana co 72 h (uwaga w razie gorączki)
+Bunondol 0,2 mg 1 tabl. w razie nasilenia bólu (do 3x dziennie)
+Tadomon 50 mg 2x1 tabl.  (tzn. 1 tabl. godz. 8:00 i 1 tabl. godz. 20:00)
+
+#Inne
+Forlax 10 g rozp. w wodzie 1x1 saszetka rano
+Czopek glicerynowy / Laxol 1x1 doodbytniczo co II dzień
+Trittico CR 75 mg 1x 2/3 tabl. wieczorem w razie bezsenności
+Versatis 5% plaster miejscowo na bolesną okolicę na 12 godzin i przerwa na kolejne 12 godzin, do 3 plastrów jednorazowo
+Olejek CBD 5% 1 kropla 2x dziennie, zwiększać o 1 kroplę rano i wieczorem co 3 dni do dawki 5 kropli 2x dziennie
+
+
+==========================================
+
+Przekazano w sposób zrozumiały następujące zalecenia lekarskie. Ponowny, pilny kontakt z lekarzem w przypadku pogorszenia lub wystąpienia innych, niepokojących dolegliwości, także w razie wystąpienia objawów ostrej choroby (gorączka, odwodnienie, osłabienie, wymioty, biegunka, trudności z przyjmowaniem płynów i pokarmów itp.). Poinformowano o możliwym wpływie leków na funkcje psychomotoryczne i ograniczenie możliwości kierowania pojazdami.
+Dalsze leczenie ambulatoryjne pod opieką Lekarza rodzinnego.
+Dalsza diagnostyka w ramach Poradni Neurologicznej / Ortopedycznej.
+
+Zgłoszenie na kontrolną wizytę ...
+
+
+
+
+Dbanie o prawidłową masę ciała i zdrową dietę (produkty zbożowe, warzywa, owoce).
+
+Fizjoterapia:
+- Wykonuj codziennie proste ćwiczenia rozciągające i wzmacniające.  
+- Dbaj o prawidłową postawę i ergonomię ruchu.  
+- Staraj się być aktywny – spacery, pływanie, nordic walking. 
+- Unikaj długiego siedzenia lub leżenia bez ruchu. 
+- Ogranicz przeciążenia i nagłe ruchy.  
+
+Fizykoterapia:
+- Miejscowe stosowanie ciepła (termofor, kompresy ThermaCare) lub zimna (chłodne kompresy żelowe z lodówki) w zależności od efektu.
+- Masaż leczniczy i terapia manualna.
+- Stosowanie TENS.
+
+Terapia poznawczo-behawioralna:
+- Ćwicz techniki relaksacyjne (oddech, medytacja, joga).  
+- Stosuj strategie radzenia sobie z bólem (uważność, pozytywne myślenie).  
+- Szukaj wsparcia w rodzinie, znajomych lub grupach wsparcia.  
+- Dbaj o higienę snu – stałe godziny, spokojne otoczenie.  
+
+Monitorowanie:
+- Prowadź dzienniczek bólu (natężenie, okoliczności, czynniki łagodzące/nasilające).  
+- Zgłaszaj się na wizyty kontrolne zgodnie z zaleceniami.  
+
+
+=================================================
+
+Po wyjąśnieniu proponowanej procedury, wykluczeniu bezwzględnych przeciwwskazań i uzyskaniu świadomej zgody wykonano zabieg blokady ....
+Łącznie podano ... lignokainy.
+Uzyskano zmniejszenie napięcia mięśniowego.
+Zabieg bez powikłań. 
+Poinformowano o postępowaniu po zabiegu (objawach alarmowych) jak w formularzu zgody na zabieg.
+
+
+=======================================================
+
+
+
+
+
